@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>数据可视化</title>
+		<link rel="stylesheet" href="index.css"/>
+	
+</head>
+	<body>
+		<header>
+			<h1>数据可视化</h1>
+		
+		<div class="howtime"></div>
+	    </header>
+		<script>
+			var t=null;
+			t = setTimeout(time,1000);
+			function time(){
+				clearTimeout(t);
+				dt = new Date();
+				var y=dt.getFullYear();
+				var mt=dt.getMonth()+1;
+				var day=dt.getDate();
+				var h=dt.getHours();
+				var m=dt.getMinutes();
+				var s=dt.getSeconds();
+				document.querySelector(".howtime").innerHTML ='当前时间：'+y+"年"+mt+"月"+day+"-"+h+"时"+m+"分"+s+"秒";
+				t=setTimeout(time,1000);
+			}
+		</script>
+		
+
+	<section  class="mainbox">
+			<div class="column">
+				<div class="panel bar">
+					<h2>就业领域</h2>
+					<div class="chart">chart</div>
+				  <div class="panel-footer"></div>
+			</div>
+			<div class="panel line">
+				<h2>工作满意度
+					<a href="javascript:;">2020</a>
+					<a href="javascript:;">2021</a>
+				</h2>
+				<div class="chart">chart</div>
+			  <div class="panel-footer"></div>
+		</div>
+		<div class="panel pie">
+			<h2>兴趣领域</h2>
+			<div class="chart">chart</div>
+		  <div class="panel-footer"></div>
+	</div>
+			</div>
+			
+	<div class="column">
+				<div class="no">
+					<div class="no-hd">
+						<ul>
+							<li>0003731</li>
+							<li>0078454</li>
+						</ul>
+					</div>
+					<div class="no-bd">
+						<ul>
+							<li>养生人数</li>
+							<li>修仙人数</li>
+						</ul>
+					</div>
+				</div>
+			<div class="map">
+				<div class="map1"></div>
+				<div class="map2"></div>
+				<div class="map3"></div>
+				<div class="chart"></div>
+			</div>
+			</div>
+			
+			
+			<div class="column">
+				<div class="panel bar2">
+					<h2>工作满意度</h2>
+					<div class="chart">chart</div>
+				  <div class="panel-footer"></div>
+			</div>
+			<div class="panel line2">
+				<h2>食品需求</h2>
+				<div class="chart">chart</div>
+			  <div class="panel-footer"></div>
+		</div>
+		<div class="panel pie2">
+			<h2>发展规划</h2>
+			<div class="chart">chart</div>
+		  <div class="panel-footer"></div>
+	</div>
+			</div>
+	</section> 
+	<script src="flexible.js"></script>
+	<script src="echarts.js"></script>
+	<script src='jQuery.js'></script>
+	<script src="china.js"></script>
+	<script src="index.js"></script>
+	
+
+	
+
+</body>
+</html>
+ 
